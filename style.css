@@ -1,0 +1,448 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #040c17;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.contact-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.contact-info a {
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+}
+
+.gridContactMap {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #3a4573;
+  padding: 20px 70px;
+}
+
+footer h1 {
+  letter-spacing: 10px;
+  margin: 6px;
+}
+
+hr {
+  margin: 10px 0px;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  gap: 24px;
+}
+
+.hero h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: clamp(36px, 6vw, 72px);
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.hero h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.1;
+  width: 40%;
+  text-align: left;
+}
+
+.hero p {
+  font-size: clamp(16px, 2vw, 20px);
+  color: #a0aec0;
+  max-width: 540px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #1a1a5e;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 50px;
+  transition:
+    background 0.25s,
+    transform 0.2s;
+}
+
+.hero-btn:hover {
+  background: #2e2e8f;
+  transform: translateY(-2px);
+}
+
+.imageContainer {
+  border: 4px solid #fff;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.15),
+    0 10px 30px rgba(139, 92, 246, 0.25);
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* відступ між блоками */
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.logo {
+  display: block;
+  line-height: 0;
+}
+
+.logo svg text {
+  font-family: "Fredoka One", cursive;
+  font-size: 46px;
+  fill: white;
+  stroke: #3a4573;
+  stroke-width: 8px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+}
+
+.privacyPolicy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #13181f;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+
+.phone-link svg {
+  fill: #3a4573;
+  transition: fill 0.25s;
+  flex-shrink: 0;
+}
+
+.phone-link:hover {
+  background: #3a4573;
+  color: #ffffff;
+}
+
+.phone-link:hover svg {
+  fill: #ffffff;
+}
+
+.row-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 35px;
+  color: #040c17;
+}
+
+.motiveit-section {
+  background-image: url("https://res.cloudinary.com/ddtq1ioty/image/upload/v1779476604/thedigitalartist-workout-1946596_leq2kj.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 79vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motiveit-section h3 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  line-height: 1.4;
+}
+
+.ourSportType {
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+  padding: 40px;
+
+  justify-items: center;
+}
+
+.sport-card {
+  color: #040c17;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgContainer {
+  width: 90px;
+  height: 90px;
+}
+
+.sport-card h3 {
+  width: fit-content;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sport-card p {
+  width: fit-content;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.sport-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: fill;
+}
+
+.text-info {
+  width: 40%;
+}
+
+.text-info h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text-info hr {
+  margin-bottom: 25px;
+}
+
+.text-info p {
+  font-size: 17px;
+  /* відстань між рядками */
+  margin-bottom: 15px; /* відступ між абзацами */
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h2 {
+    width: 100%;
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 90%;
+    height: auto;
+  }
+
+  .row-grid {
+    flex-direction: column;
+  }
+
+  .row-grid:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .text-info {
+    width: 100%;
+  }
+
+  .imageContainer {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+
+  .ourSportType {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .motiveit-section h3 {
+    width: 80%;
+    font-size: 32px;
+  }
+
+  .gridContactMap {
+    flex-direction: column;
+  }
+
+  .gridContactMap iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo svg {
+    width: 150px;
+    height: 50px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .info-grid {
+    gap: 40px;
+  }
+
+  .row-grid {
+    gap: 20px;
+  }
+
+  .text-info h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .text-info p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .motiveit-section {
+    min-height: 60vh;
+    padding: 30px 20px;
+  }
+
+  .motiveit-section h3 {
+    width: 100%;
+    font-size: 26px;
+  }
+
+  .ourSportType {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .sport-card {
+    max-width: 500px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer h1 {
+    font-size: 34px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .contact-info {
+    gap: 20px;
+  }
+
+  .contact-info a {
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .privacyPolicy {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .motiveit-section h3 {
+    font-size: 22px;
+  }
+
+  .text-info h2 {
+    font-size: 24px;
+  }
+
+  .text-info p {
+    font-size: 15px;
+  }
+
+  .sport-card h3 {
+    font-size: 20px;
+  }
+
+  .sport-card p {
+    font-size: 15px;
+  }
+
+  footer h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+}
